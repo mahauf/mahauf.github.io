@@ -1,0 +1,552 @@
+<!doctype html>
+<html id="html" lang="en" dir="ltr" class="js-off">
+
+<head>
+    
+    <meta charset="utf-8" />
+    <title>Mahalakshmi - Portfolio</title>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,user-scalable=1,minimum-scale=1.0" />
+    
+    <!-- Meta Information -->
+
+    <link rel="canonical" href="https://christiandunkel.github.io" />
+    <meta name="description" content="I'm a web developer. Check out my projects that range from websites to Javascript libraries." />
+    <meta name="keywords" content="mahalakshmi, portfolio, web developer, software developer, web designer" />
+    <meta name="author" content="Mahalakshmi">
+    <meta name="robots" content="index, follow">
+    
+    <script type="text/javascript">
+        
+        (function () {
+            
+            var html = document.documentElement || document.getElementsByTagName('html')[0];
+            
+            // tell CSS that Javascript is on
+            html.className = html.className.replace(/js\-off/, 'js-on');
+            
+            // determine user language (only front-end, unreliable)
+            
+            // get current language properties
+            var n = window.navigator;
+            var lang_props = [
+                n.languages ? n.languages[0] : undefined,
+                n.language,
+                n.userLanguage,
+                n.systemLanguage,
+                n.browserLanguage
+            ];
+            
+            for (var i = lang_props.length; i--;) {
+                
+                // get language code from property
+                var code = lang_props[i];
+                if (!code) {
+                    continue;
+                }
+                
+                // shorten code if needed e.g. "en-us" -> "en"
+                code = code.substring(0,2);
+                
+                // if a different language than "en" is detected in 
+                // any of the properties and it's supported, load it
+                if (code == 'de') {
+                    html.setAttribute('lang', code);
+                    break;
+                }
+                
+            }
+            
+        })();
+        
+    </script>
+    
+    <!-- Share Information -->
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://christiandunkel.github.io">
+    <meta property="og:title" content="Mahalakshmi">
+    <meta property="og:description" content="I'm a web developer. Check out my projects that range from websites to Javascript libraries.">
+    
+    <!-- Application Data Resources -->
+
+    <meta name="theme-color" content="#b71a49">
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    
+    <!-- Stylesheets and Fonts -->
+    
+    <link rel="preload" href="/font/ubuntu.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" type="text/css" href="css/app.min.css">
+    
+</head>
+    
+<body>
+
+    <nav id="nav">
+        <div class="bar">
+            
+            <a class="mobile-logo" href="#html" title="Go to top" data-title-de="Nach oben">
+                <span>Maha</span>
+                <span>Lakshmi</span>
+            </a>
+
+            <div id="mobile-menu">
+                <div class="overlay"></div>
+                <div class="content">
+                    
+                    <div class="center">
+                        <a class="a0 logo-link active" href="#html" title="To top" data-title-de="Nach oben"></a>
+                        <a class="a1" href="#about">
+                            <span lang="en">About</span>
+                            <span lang="de">Über</span>
+                        </a>
+                        <a class="a2" href="#skills">
+                            <span lang="en">Skills</span>
+                            <span lang="de">Über</span>
+                        </a>
+                        <a class="a3" href="#experience">
+                            <span lang="en">Experience</span>
+                            <span lang="de">Über</span>
+                        </a>
+                        <a class="a4" href="#projects">
+                            <span lang="en">Projects</span>
+                            <span lang="de">Projekte</span>
+                        </a>
+                        <a class="a5" href="#contact">
+                            <span lang="en">Contact</span>
+                            <span lang="de">Kontakt</span>
+                        </a>
+                        <div class="hover-bg"></div>
+
+                        <button id="language-btn" title="Change language" data-title-de="Sprache wechseln">
+                            <b>
+                                <span class="en"></span>
+                                <span class="de"></span>
+                            </b>
+                            <span lang="en">English</span>
+                            <span lang="de">Deutsch</span>
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <button id="hamburger-btn" class="hide-without-js" title="Toggle menu" data-title-de="Öffne und schließe das Menü">
+                <b>
+                    <i class="i1"></i>
+                    <i class="i2"></i>
+                    <i class="i3"></i>
+                    <i class="i4"></i>
+                </b>
+            </button>
+            
+        </div>
+    </nav>
+            
+    <div id="animated-background"></div>
+    
+    <main>
+    
+        <section id="intro">
+            
+            <div class="text">
+
+                <div class="flex">
+                    <div class="center">
+                        <div class="greet">
+                            <span lang="en">Hi, I'm</span>
+                            <span lang="de">Hi, ich bin</span>
+                        </div><br />
+                        <h1 class="name"><span>Mahalakshmi</span>,</h1><br />
+                        <div class="desc">
+                            <span lang="en">a web developer.</span>
+                            <span lang="de">ein Web-Entwickler.</span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </section>
+        
+        
+        
+        
+    
+        <section id="about" class="content-section">
+        
+            <h2 class="responsive">
+                <span lang="en">About me</span>
+                <span lang="de">Über mich</span>
+            </h2>
+            
+            <p class="responsive">
+                <span lang="en">I started out editing videos and images, before I discovered the wonders of <b class="blue">web development</b>!</span>
+                <span lang="de">Ich begann mit dem Bearbeiten von Videos und Bildern, bevor ich die <b class="blue">Web-Entwicklung</b> für mich entdeckt habe!</span>
+            </p>
+            
+            <p class="responsive">
+                <span lang="en">Now I create <b>responsive, accessible websites</b> with JavaScript, PHP and other technologies!</span>
+                <span lang="de">Nun erstelle ich <b>anpassungsfähige, zugängliche Websites</b> mit JavaScript, PHP und anderen Technologien!</span>
+            </p>
+            
+        </section>
+
+
+        <section id="skills" class="content-section">
+        
+            <h2 class="responsive">
+                <span lang="en">Skill</span>
+                <span lang="de">Über mich</span>
+            </h2>
+            
+            <p class="responsive">
+                <span lang="en">I started out editing videos and images, before I discovered the wonders of <b class="blue">web development</b>!</span>
+                <span lang="de">Ich begann mit dem Bearbeiten von Videos und Bildern, bevor ich die <b class="blue">Web-Entwicklung</b> für mich entdeckt habe!</span>
+            </p>
+            
+            <p class="responsive">
+                <span lang="en">Now I create <b>responsive, accessible websites</b> with JavaScript, PHP and other technologies!</span>
+                <span lang="de">Nun erstelle ich <b>anpassungsfähige, zugängliche Websites</b> mit JavaScript, PHP und anderen Technologien!</span>
+            </p>
+
+            <div id="skills-container" class="row">
+
+                <div class="col-six tab-full">
+
+                    <ul class="skill-bars">
+                        
+                        <li>
+                            <div class="progress percent65"><span>65%</span></div>
+                            <strong>Selenium</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent85"><span>83%</span></div>
+                            <strong>Web Scraping</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent75"><span>72%</span></div>
+                            <strong>Ethereum/Tokens</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent95"><span>97%</span></div>
+                            <strong>GNU/LINUX</strong>
+                        </li>
+        
+                    </ul>
+
+                </div>
+
+                <div class="col-six tab-full">
+
+                    <ul class="skill-bars">
+                        <li>
+                            <div class="progress percent90"><span>96%</span></div>
+                            <strong>Python</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent85"><span>85%</span></div>
+                            <strong>Django</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent70"><span>70%</span></div>
+                            <strong>Solidity</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent65"><span>65%</span></div>
+                            <strong>Selenium</strong>
+                        </li>
+                      
+        
+                    </ul>
+
+                </div>
+
+            </div>
+            
+        </section>
+
+
+
+        <section id="experience" class="content-section">
+        
+            <h2 class="responsive">
+                <span lang="en">Experience</span>
+                <span lang="de">Über mich</span>
+            </h2>
+            
+            <p class="responsive">
+                <span lang="en">I started out editing videos and images, before I discovered the wonders of <b class="blue">web development</b>!</span>
+                <span lang="de">Ich begann mit dem Bearbeiten von Videos und Bildern, bevor ich die <b class="blue">Web-Entwicklung</b> für mich entdeckt habe!</span>
+            </p>
+            
+            <p class="responsive">
+                <span lang="en">Now I create <b>responsive, accessible websites</b> with JavaScript, PHP and other technologies!</span>
+                <span lang="de">Nun erstelle ich <b>anpassungsfähige, zugängliche Websites</b> mit JavaScript, PHP und anderen Technologien!</span>
+            </p>
+
+            <div class="row about-experience__timeline">
+
+                <div class="column large-half tab-full" data-aos="fade-up">
+                    <div class="timeline">
+
+                        <div class="timeline__icon-wrap">
+                            <span class="timeline__icon timeline__icon--work"></span>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">July 2018 - Present</p>
+                                <h3 class="item-title">Awesome Studio</h3>
+                                <h5>Lead Designer</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">July 2017 - June 2018</p>
+                                <h3 class="item-title">Super Cool Agency</h3>
+                                <h5>Frontend Developer</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">March 2016 - June 2017</p>
+                                <h3 class="item-title">Epic Design Studio</h3>
+                                <h5>Frontend Developer</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="column large-half tab-full" data-aos="fade-up">
+                    <div class="timeline">
+
+                        <div class="timeline__icon-wrap">
+                            <span class="timeline__icon timeline__icon--education"></span>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">July 2011 - June 2015</p>
+                                <h3 class="item-title">University of Life</h3>
+                                <h5>Master Degree</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">July 2009 - June 2011</p>
+                                <h3 class="item-title">State Design University</h3>
+                                <h5>Bachelor Degree</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">July 2005 - June 2009</p>
+                                <h3 class="item-title">School of Hard Knocks</h3>
+                                <h5>Bachelor Degree</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+
+        
+        
+        
+        <section id="projects" class="content-section">
+        
+            <h2 class="responsive">
+                <span lang="en">Projects</span>
+                <span lang="de">Projekte</span>
+            </h2>
+            
+            <p class="responsive hide-without-js">
+                <span lang="en">Select the <b>categories</b> you want the projects to have:</span>
+                <span lang="de">Wähle die <b>Kategorien</b> aus, die die Projekte haben sollen:</span>
+            </p>
+            
+            <!-- project display settings -->
+            
+            <button id="project-settings-btn" class="responsive small" title="Settings" data-title-de="Einstellungen">
+                <span>+</span>
+            </button>
+            
+            <div id="project-settings-menu" aria-hidden="true">
+                
+                <div class="menu">
+
+                    <button id="project-switch-logic-btn" class="responsive small" logic="AND">
+                        <i lang="en">
+                            Change the project selection logic:<br />
+                            <b class="or">OR</b>
+                            <b class="and">AND</b>
+                        </i>
+                        <i lang="de">
+                            Ändere die Projekt-Auswahl Logik:<br />
+                            <b class="or">ODER</b>
+                            <b class="and">UND</b>
+                        </i>
+                    </button>
+                    
+                </div>
+
+            </div>
+            
+            <!-- project-category-select buttons are inserted here -->
+            
+            <br class="responsive hide-without-js" />
+            
+            <hr class="responsive hide-without-js" />
+            
+            <div id="projects-container">
+                
+                <!-- project cards are inserted here -->
+            
+                <p class="responsive small no-projects-selected hide-without-js">
+                    <span lang="en">No projects fitting the requirements found.</span>
+                    <span lang="de">Keine Projekte passend zu den Anforderungen gefunden.</span>
+                </p>
+            
+                <p class="responsive small hide-with-js">
+                    <span lang="en">Please enable JavaScript in your browser to load the projects.</span>
+                    <span lang="de">Bitte aktivieren Sie JavaScript in ihrem Browser, um die Projekte zu laden.</span>
+                </p>
+            
+            </div>
+            
+        </section>
+        
+        
+        
+        
+        
+        <section id="contact" class="content-section">
+        
+            <h2 class="responsive">
+                <span lang="en">Contact</span>
+                <span lang="de">Kontakt</span>
+            </h2>
+            
+            <p class="responsive">
+                <span lang="en">You can contact me <b>via e-mail</b>, and I'll come back to you as fast as possible!</span>
+                <span lang="de">Sie können mich <b>per E-Mail</b> kontaktieren, und ich werde so schnell wie möglich auf Sie zurück kommen!</span>
+            </p>
+            
+            <div class="mail-container">
+                
+                <input class="checkbox" type="checkbox" />
+                
+                <div class="mail-btn responsive">
+                    <span lang="en">Show e-mail adress &rarr;</span>
+                    <span lang="de">Zeige E-Mail Adresse &rarr;</span>
+                </div>
+            
+                <a class="mail responsive" href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&colon;&#x63;&#x68;&#x72;&#x69;&#x73;&#x74;&#x69;&#x61;&#x6e;&#x64;&#x75;&#x6e;&#x6b;&#x65;&#x6c;&commat;&#x70;&#x72;&#x6f;&#x74;&#x6f;&#x6e;&#x6d;&#x61;&#x69;&#x6c;&period;&#x63;&#x6f;&#x6d;">&#x63;&#x68;&#x72;&#x69;&#x73;&#x74;&#x69;&#x61;&#x6e;&#x64;&#x75;&#x6e;&#x6b;&#x65;&#x6c;&commat;&#x70;&#x72;&#x6f;&#x74;&#x6f;&#x6e;&#x6d;&#x61;&#x69;&#x6c;&period;&#x63;&#x6f;&#x6d;</a>
+                
+            </div>
+            
+            <hr />
+            
+            <p class="responsive">
+                <span lang="en">You can also find me here:</span>
+                <span lang="de">Sie können mich auch hier finden:</span>
+            </p>
+            
+            <a class="responsive socialmedia github" href="https://github.com/mahauf" target="_blank" rel="noopener noreferrer">GitHub</a>
+            
+        </section>
+        
+    </main>
+        
+        
+        
+    <div id="footer-graphic">
+        <div class="layer1">
+            <div class="rect"></div>
+            <div class="rect"></div>
+            <div class="rect"></div>
+            <div class="rect"></div>
+            <div class="rect"></div>
+            <div class="rect"></div>
+        </div>
+        <div class="layer2">
+            <div class="rect"></div>
+            <div class="rect"></div>
+            <div class="rect"></div>
+            <div class="rect"></div>
+            <div class="rect"></div>
+            <div class="rect"></div>
+        </div>
+    </div>
+
+    <footer>
+
+        <button id="to-top" class="hide-without-js" title="Go to top" data-title-de="Nach oben">
+            <b>
+                <i class="head1"></i>
+                <i class="head2"></i>
+            </b>
+        </button>
+
+        <p class="responsive small">
+            <span lang="en">The source code is hosted <a href="https://github.com/christiandunkel/christiandunkel.github.io" target="_blank" rel="noopener noreferrer">here</a> on GitHub.</span>
+            <span lang="de">Der Quellcode wird auf <a href="https://github.com/christiandunkel/christiandunkel.github.io" target="_blank" rel="noopener noreferrer">GitHub</a> gehostet.</span>
+        </p>
+
+        <p class="responsive small"> 
+            <span lang="en">&copy; Copyright <span class="current-year"></span>, Mahalakshmi</span>
+            <span lang="de">&copy; Urheberrecht <span class="current-year"></span>, Mahalakshmi</span>
+        </p>
+
+    </footer>
+    
+    
+    
+    
+    <div id="reduced-motion-preference" class="hidden-message"></div>
+    
+    <!-- scripts -->
+    
+    <script defer src="js/app.min.js"></script>
+    
+</body>
+
+</html>
