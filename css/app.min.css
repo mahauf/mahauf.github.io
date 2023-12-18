@@ -138,6 +138,7 @@
  * ------------------------------------------------------------------- */
 .about-experience__timeline {
     margin-top: 1.6rem;
+    display: flex;
   }
   
   .about-experience__timeline .column:first-child {
@@ -158,7 +159,8 @@
     display: block;
     width: 1px;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.12);
+    /* background-color: rgba(0, 0, 0, 0.12); */
+    background-color: #00638D;
     position: absolute;
     left: 0;
     top: 0;
@@ -169,7 +171,8 @@
     display: block;
     width: 5.6rem;
     height: 1px;
-    background-color: rgba(0, 0, 0, 0.12);
+    /* background-color: rgba(0, 0, 0, 0.12); */
+    background-color: #00638D;
     position: absolute;
     left: 1px;
     top: 0;
@@ -204,16 +207,14 @@
     background-image: url(../images/icons/icon-briefcase.svg);
   }
   
-  .timeline__icon--education {
-    background-image: url(../images/icons/icon-education.svg);
-  }
+  
   
   .timeline__block {
     position: relative;
     padding-left: 5.6rem;
     padding-bottom: .8rem;
     margin-top: 2.8rem;
-    min-height: 35.6rem;
+    /* min-height: 35.6rem; */
   }
   
   .timeline .timeline__block:last-child {
@@ -225,7 +226,8 @@
     display: block;
     width: 3px;
     height: 4.8rem;
-    background-color: #000000;
+    /* background-color: #000000; */
+    background-color: #B71A49;
     position: absolute;
     left: -1px;
     top: 8px;
@@ -235,10 +237,10 @@
     margin-bottom: 3.2rem;
   }
   
-  .timeline__header .timeline__timeframe,
+  /* .timeline__header .timeline__timeframe,
   .timeline__header h5 {
     font-family: "Roboto", sans-serif;
-  }
+  } */
   
   .timeline__header .timeline__timeframe {
     font-size: 1.4rem;
@@ -247,7 +249,7 @@
     text-transform: uppercase;
     letter-spacing: .3rem;
     margin-bottom: .8rem;
-    color: #000000;
+    /* color: #000000; */
   }
   
   .timeline__header h3 {
