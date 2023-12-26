@@ -2,31 +2,34 @@
 <html id="html" lang="en" dir="ltr" class="js-off">
 
 <head>
-    
+
     <meta charset="utf-8" />
+
     <title>Mahalakshmi - Portfolio</title>
-    
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,user-scalable=1,minimum-scale=1.0" />
-    
+    <meta name="viewport"
+        content="width=device-width,height=device-height,initial-scale=1.0,user-scalable=1,minimum-scale=1.0" />
+
     <!-- Meta Information -->
     <link rel="canonical" href="https://christiandunkel.github.io" />
-    <meta name="description" content="I'm a web developer. Check out my projects that range from websites to Javascript libraries." />
+    <meta name="description"
+        content="I'm a web developer. Check out my projects that range from websites to Javascript libraries." />
     <meta name="keywords" content="mahalakshmi, portfolio, web developer, software developer, web designer" />
     <meta name="author" content="Mahalakshmi">
     <meta name="robots" content="index, follow">
-    
+
     <script type="text/javascript">
-        
+
         (function () {
-            
+
             var html = document.documentElement || document.getElementsByTagName('html')[0];
-            
+
             // tell CSS that Javascript is on
             html.className = html.className.replace(/js\-off/, 'js-on');
-            
+
             // determine user language (only front-end, unreliable)
-            
+
             // get current language properties
             var n = window.navigator;
             var lang_props = [
@@ -36,38 +39,39 @@
                 n.systemLanguage,
                 n.browserLanguage
             ];
-            
+
             for (var i = lang_props.length; i--;) {
-                
+
                 // get language code from property
                 var code = lang_props[i];
                 if (!code) {
                     continue;
                 }
-                
+
                 // shorten code if needed e.g. "en-us" -> "en"
-                code = code.substring(0,2);
-                
+                code = code.substring(0, 2);
+
                 // if a different language than "en" is detected in 
                 // any of the properties and it's supported, load it
                 if (code == 'de') {
                     html.setAttribute('lang', code);
                     break;
                 }
-                
+
             }
-            
+
         })();
-        
+
     </script>
-    
+
     <!-- Share Information -->
-    
+
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://christiandunkel.github.io">
     <meta property="og:title" content="Mahalakshmi">
-    <meta property="og:description" content="I'm a web developer. Check out my projects that range from websites to Javascript libraries.">
-    
+    <meta property="og:description"
+        content="I'm a web developer. Check out my projects that range from websites to Javascript libraries.">
+
     <!-- Application Data Resources -->
 
     <meta name="theme-color" content="#b71a49">
@@ -76,19 +80,23 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <link rel="manifest" href="/manifest.json" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    
+
     <!-- Stylesheets and Fonts -->
-    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="preload" href="/font/ubuntu.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="stylesheet" type="text/css" href="css/app.min.css">
-    
+
 </head>
-    
+
 <body>
 
     <nav id="nav">
         <div class="bar">
-            
+
             <a class="mobile-logo" href="#html" title="Go to top" data-title-de="Nach oben">
                 <span>Maha</span>
                 <span>Lakshmi</span>
@@ -97,7 +105,7 @@
             <div id="mobile-menu">
                 <div class="overlay"></div>
                 <div class="content">
-                    
+
                     <div class="center">
                         <a class="a0 logo-link active" href="#html" title="To top" data-title-de="Nach oben"></a>
                         <a class="a1" href="#about">
@@ -131,11 +139,12 @@
                             <span lang="de">Deutsch</span>
                         </button>
                     </div>
-                    
+
                 </div>
             </div>
-            
-            <button id="hamburger-btn" class="hide-without-js" title="Toggle menu" data-title-de="Öffne und schließe das Menü">
+
+            <button id="hamburger-btn" class="hide-without-js" title="Toggle menu"
+                data-title-de="Öffne und schließe das Menü">
                 <b>
                     <i class="i1"></i>
                     <i class="i2"></i>
@@ -143,16 +152,16 @@
                     <i class="i4"></i>
                 </b>
             </button>
-            
+
         </div>
     </nav>
-            
+
     <div id="animated-background"></div>
-    
+
     <main>
-    
+
         <section id="intro">
-            
+
             <div class="text">
 
                 <div class="flex">
@@ -168,50 +177,57 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
-            
+
         </section>
-        
-        
-        
-        
-    
+
+
+
+
+
         <section id="about" class="content-section">
-        
+
             <h2 class="responsive">
                 <span lang="en">About me</span>
                 <span lang="de">Über mich</span>
             </h2>
-            
+
             <p class="responsive">
-                <span lang="en">I started out editing videos and images, before I discovered the wonders of <b class="blue">web development</b>!</span>
-                <span lang="de">Ich begann mit dem Bearbeiten von Videos und Bildern, bevor ich die <b class="blue">Web-Entwicklung</b> für mich entdeckt habe!</span>
+                <span lang="en">Hey! I'm <b
+                    class="blue">Mahalakshmi</b>, a frontend developer with a solid two years of experience creating captivating and responsive web applications. My coding journey started with a love for turning concepts into interactive and visually stunning websites.</span>
+                <span lang="de">Ich begann mit dem Bearbeiten von Videos und Bildern, bevor ich die <b
+                        class="blue">Web-Entwicklung</b> für mich entdeckt habe!</span>
             </p>
-            
+
             <p class="responsive">
-                <span lang="en">Now I create <b>responsive, accessible websites</b> with JavaScript, PHP and other technologies!</span>
-                <span lang="de">Nun erstelle ich <b>anpassungsfähige, zugängliche Websites</b> mit JavaScript, PHP und anderen Technologien!</span>
+                <span lang="en">Proficient in <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b>, I've successfully translated design mockups into pixel-perfect, user-friendly interfaces. I'm committed to writing clean and efficient code, always striving for optimal performance. My experience extends to working with various frontend frameworks and libraries, such as <b>AnjularJS</b>, and staying updated with the ever-evolving tech landscape. What sets me apart is not just my technical expertise but my passion for creating memorable user experiences.</span>
+                <span lang="de">Nun erstelle ich <b>anpassungsfähige, zugängliche Websites</b> mit JavaScript, PHP und
+                    anderen Technologien!</span>
             </p>
-            
+
         </section>
 
 
         <section id="skills" class="content-section">
-        
+
             <h2 class="responsive">
                 <span lang="en">Skill</span>
                 <span lang="de">Über mich</span>
             </h2>
-            
+
             <p class="responsive">
-                <span lang="en">I started out editing videos and images, before I discovered the wonders of <b class="blue">web development</b>!</span>
-                <span lang="de">Ich begann mit dem Bearbeiten von Videos und Bildern, bevor ich die <b class="blue">Web-Entwicklung</b> für mich entdeckt habe!</span>
+                <span lang="en">I started out editing videos and images, before I discovered the wonders of <b
+                        class="blue">web development</b>!</span>
+                <span lang="de">Ich begann mit dem Bearbeiten von Videos und Bildern, bevor ich die <b
+                        class="blue">Web-Entwicklung</b> für mich entdeckt habe!</span>
             </p>
-            
+
             <p class="responsive">
-                <span lang="en">Now I create <b>responsive, accessible websites</b> with JavaScript, PHP and other technologies!</span>
-                <span lang="de">Nun erstelle ich <b>anpassungsfähige, zugängliche Websites</b> mit JavaScript, PHP und anderen Technologien!</span>
+                <span lang="en">Now I create <b>responsive, accessible websites</b> with JavaScript, Angular and other
+                    technologies!</span>
+                <span lang="de">Nun erstelle ich <b>anpassungsfähige, zugängliche Websites</b> mit JavaScript, PHP und
+                    anderen Technologien!</span>
             </p>
 
             <div id="skills-container" class="row">
@@ -219,24 +235,24 @@
                 <div class="col-six tab-full">
 
                     <ul class="skill-bars">
-                        
+
                         <li>
                             <div class="progress percent65"><span>65%</span></div>
-                            <strong>Selenium</strong>
+                            <strong>Angular</strong>
                         </li>
                         <li>
                             <div class="progress percent85"><span>83%</span></div>
-                            <strong>Web Scraping</strong>
+                            <strong>MongoDB</strong>
                         </li>
                         <li>
                             <div class="progress percent75"><span>72%</span></div>
-                            <strong>Ethereum/Tokens</strong>
+                            <strong>Express</strong>
                         </li>
                         <li>
                             <div class="progress percent95"><span>97%</span></div>
-                            <strong>GNU/LINUX</strong>
+                            <strong>HTML/CSS</strong>
                         </li>
-        
+
                     </ul>
 
                 </div>
@@ -246,126 +262,221 @@
                     <ul class="skill-bars">
                         <li>
                             <div class="progress percent90"><span>96%</span></div>
-                            <strong>Python</strong>
+                            <strong>Javascript</strong>
                         </li>
                         <li>
                             <div class="progress percent85"><span>85%</span></div>
-                            <strong>Django</strong>
+                            <strong>Figma</strong>
                         </li>
                         <li>
                             <div class="progress percent70"><span>70%</span></div>
-                            <strong>Solidity</strong>
+                            <strong>Bootstrap</strong>
                         </li>
                         <li>
                             <div class="progress percent65"><span>65%</span></div>
-                            <strong>Selenium</strong>
+                            <strong>JQuery</strong>
                         </li>
-                      
-        
+
+
                     </ul>
 
                 </div>
 
             </div>
-            
+
         </section>
 
 
 
         <section id="experience" class="content-section">
-        
+
             <h2 class="responsive">
                 <span lang="en">Experience</span>
                 <span lang="de">Über mich</span>
             </h2>
-            
+
             <p class="responsive">
-                <span lang="en">I started out editing videos and images, before I discovered the wonders of <b class="blue">web development</b>!</span>
-                <span lang="de">Ich begann mit dem Bearbeiten von Videos und Bildern, bevor ich die <b class="blue">Web-Entwicklung</b> für mich entdeckt habe!</span>
-            </p>
-            
-            <p class="responsive">
-                <span lang="en">Now I create <b>responsive, accessible websites</b> with JavaScript, PHP and other technologies!</span>
-                <span lang="de">Nun erstelle ich <b>anpassungsfähige, zugängliche Websites</b> mit JavaScript, PHP und anderen Technologien!</span>
+                <span lang="en">I started out editing videos and images, before I discovered the wonders of <b
+                        class="blue">web development</b>!</span>
+                <span lang="de">Ich begann mit dem Bearbeiten von Videos und Bildern, bevor ich die <b
+                        class="blue">Web-Entwicklung</b> für mich entdeckt habe!</span>
             </p>
 
-            <div class="row about-experience__timeline">
+            <p class="responsive">
+                <span lang="en">Now I create <b>responsive, accessible websites</b> with JavaScript, PHP and other
+                    technologies!</span>
+                <span lang="de">Nun erstelle ich <b>anpassungsfähige, zugängliche Websites</b> mit JavaScript, PHP und
+                    anderen Technologien!</span>
+            </p>
 
-                <div class="column large-half tab-full" data-aos="fade-up">
-                    <div class="timeline">
+            <section id="resume" class="grey-section">
 
-                        <div class="timeline__icon-wrap">
-                            <span class="timeline__icon timeline__icon--work"></span>
-                        </div>
+                <div class="row resume-timeline">
 
-                        <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">July 2018 - Present</p>
-                                <h3 class="item-title">Awesome Studio</h3>
-                                <h5>Lead Designer</h5>
-                            </div>
-                            <div class="timeline__desc">
-                                <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
-                            </div>
-                        </div>
+                    <div class="col-twelve resume-header">
 
-                        <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">July 2017 - June 2018</p>
-                                <h3 class="item-title">Super Cool Agency</h3>
-                                <h5>Frontend Developer</h5>
-                            </div>
-                            <div class="timeline__desc">
-                                <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
-                            </div>
-                        </div>
+                        <!-- <h2 id="experience">Work Experience</h2> -->
 
-                        <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">March 2016 - June 2017</p>
-                                <h3 class="item-title">Epic Design Studio</h3>
-                                <h5>Frontend Developer</h5>
-                            </div>
-                            <div class="timeline__desc">
-                                <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
-                            </div>
-                        </div>
+                    </div> <!-- /resume-header -->
 
-                    </div>
-                </div>
+                    <div class="col-twelve">
 
-               
-            </div>
-            
+                        <div class="timeline-wrap">
+
+                            <div class="timeline-block">
+
+                                <div class="timeline-ico">
+                                    <i class="fa fa-graduation-cap"></i>
+                                </div>
+
+                                <div class="timeline-header">
+                                    <h3>Frontend Developer</h3>
+                                    <p>July 2022 - Present</p>
+                                </div>
+ 
+                                <div class="timeline-content">
+                                    <h4>SELF-EMPLOYED</h4>
+                                    <p>I am currently a freelancer as Frontend Developer and UI Designer. I develop modern and high quality interfaces, focused on performance, animation, responsive websites. </p>
+                                    <ul>
+                                        <li>Coding, deploying and running unified test for <b>ERC20</b> compliant
+                                            <b>SLT</b> tokens.</li>
+                                        <li>Generation of security audit reports.</li>
+                                        <li>Heavily involved in writing and deploying smart contracts.</li>
+                                        <li>Optimized smart contract code and reduced gas cost by 15% by implementing
+                                            library functionalities.</li>
+                                        <li>Setting up private Ethereum test network in <b>Geth</b>.</li>
+                                        <li>Implemented a unit testing suit for smart contracts using <b>Mocha</b>
+                                            framework.</li>
+                                        <li>Define the structure of Blockchain development for Slothee's platform and
+                                            defined access control and security of SLT tokens.</li>
+                                        <li>Integrated <b>Whisper protocol</b> into Slothee's platform.</li>
+                                    </ul>
+                                </div>
+
+                            </div> <!-- /timeline-block -->
+
+                            <div class="timeline-block">
+
+                                <div class="timeline-ico">
+                                    <i class="fa fa-graduation-cap"></i>
+                                </div>
+
+                                <div class="timeline-header">
+                                    <h3>Web Development Intern</h3>
+                                    <p>Nov 2021 - june 2022 </p>
+                                </div>
+
+                                <div class="timeline-content">
+                                    <h4>SELF-EMPLOYED</h4>
+                                    <p>When I first read about blockchain and its potential of attaining decentralized
+                                        internet it undoubtedly gets my traction. As my eagerness for blockchain
+                                        technologies reaches a critical point, I left my job and employ three whole
+                                        months to learn everything to implement Decentralized Apps from base. Upon
+                                        kicking in, I started freelancing and My development work involves,</p>
+                                    <ul>
+                                        <li>Designed and coded <b>Smart cotracts</b> using solidity for generating your
+                                            own crypto-currency token, deployed on Ethereum blockchain</li>
+                                        <li>Coded smart contracts based on ERC-223, ERC-721 token standard, deployed and
+                                            conducted security audit.</li>
+                                        <li>Implemeted test scripts on smart contracts using <b>Truffle</b> framework.
+                                        </li>
+                                        <li>Has coded and launched <b>Token Sales</b> based on Ethereum blockchain with
+                                            <b>ERC-20</b> compliant tokens.</li>
+                                        <li>Fixed bugs relatd to integration of Frontend and Blockchain over browser.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div> <!-- /timeline-block -->
+
+                            <div class="timeline-block">
+
+                                <div class="timeline-ico">
+                                    <i class="fa fa-graduation-cap"></i>
+                                </div>
+
+                                <div class="timeline-header">
+                                    <h3>Business Development Manager</h3>
+                                    <p>Feb 2020 - Sep 2021</p>
+                                </div>
+
+                                <div class="timeline-content">
+                                    <h4>SBI Life Insurance Co. Ltd.</h4>
+                                    <p>Recruited, trained, and evaluated 20-30 agents to build high-performing teams for business
+                                        development and successfully achieved the budget-scheduled goals.</p>
+                                    <ul>
+                                       
+                                        <li>Implemented development guidelines and standards throughout the development
+                                            and maintenance of the website.</li>
+                                        <li>Work with team of developers on python applications for <b>RISK</b>
+                                            management.</li>
+                                        <li>Resolved ongoing problems and accurately documented progress of a project.
+                                        </li>
+                                        <li>Automated simple Production tasks using python.</li>
+                                    </ul>
+                                </div>
+
+                            </div> <!-- /timeline-block -->
+
+                            <div class="timeline-block">
+
+                                <div class="timeline-ico">
+                                    <i class="fa fa-graduation-cap"></i>
+                                </div>
+
+                                <div class="timeline-header">
+                                    <h3>Assistant Project Coordinator</h3>
+                                    <p>Sep 2017 - Dec 2019</p>
+                                </div>
+
+                                <div class="timeline-content">
+                                    <h4>Arunachala Technologies</h4>
+                                    <p>Conducted high-level project research, evidence-based data collection, and preliminary data
+                                        analysis to support in multitasking research tasks as such, </p>
+                                    <ul>
+                                       
+                                        <li>Analytics on extracted data.</li>
+                                        <li>Wrote <b>automation</b> scripts in python to automate backup process of
+                                            critical files into remote server.</li>
+                                        <li>Coded test programs and evaluated existing django code bases.</li>
+                                        <li>IOT projects utilising on Raspberry Pi, BeagleBoard etc.</li>
+                                    </ul>
+                                </div>
+
+                            </div> <!-- /timeline-block -->
+
+                        </div> <!-- /timeline-wrap -->
+
+                    </div> <!-- /col-twelve -->
+
+                </div> <!-- /resume-timeline -->
+            </section>
+
         </section>
 
 
-        
-        
-        
+
+
+
         <section id="projects" class="content-section">
-        
+
             <h2 class="responsive">
                 <span lang="en">Projects</span>
                 <span lang="de">Projekte</span>
             </h2>
-            
+
             <p class="responsive hide-without-js">
                 <span lang="en">Select the <b>categories</b> you want the projects to have:</span>
                 <span lang="de">Wähle die <b>Kategorien</b> aus, die die Projekte haben sollen:</span>
             </p>
-            
+
             <!-- project display settings -->
-            
+
             <button id="project-settings-btn" class="responsive small" title="Settings" data-title-de="Einstellungen">
                 <span>+</span>
             </button>
-            
+
             <div id="project-settings-menu" aria-hidden="true">
-                
+
                 <div class="menu">
 
                     <button id="project-switch-logic-btn" class="responsive small" logic="AND">
@@ -380,79 +491,83 @@
                             <b class="and">UND</b>
                         </i>
                     </button>
-                    
+
                 </div>
 
             </div>
-            
+
             <!-- project-category-select buttons are inserted here -->
-            
+
             <br class="responsive hide-without-js" />
-            
+
             <hr class="responsive hide-without-js" />
-            
+
             <div id="projects-container">
-                
+
                 <!-- project cards are inserted here -->
-            
+
                 <p class="responsive small no-projects-selected hide-without-js">
                     <span lang="en">No projects fitting the requirements found.</span>
                     <span lang="de">Keine Projekte passend zu den Anforderungen gefunden.</span>
                 </p>
-            
+
                 <p class="responsive small hide-with-js">
                     <span lang="en">Please enable JavaScript in your browser to load the projects.</span>
                     <span lang="de">Bitte aktivieren Sie JavaScript in ihrem Browser, um die Projekte zu laden.</span>
                 </p>
-            
+
             </div>
-            
+
         </section>
-        
-        
-        
-        
-        
+
+
+
+
+
         <section id="contact" class="content-section">
-        
+
             <h2 class="responsive">
                 <span lang="en">Contact</span>
                 <span lang="de">Kontakt</span>
             </h2>
-            
+
             <p class="responsive">
-                <span lang="en">You can contact me <b>via e-mail</b>, and I'll come back to you as fast as possible!</span>
-                <span lang="de">Sie können mich <b>per E-Mail</b> kontaktieren, und ich werde so schnell wie möglich auf Sie zurück kommen!</span>
+                <span lang="en">You can contact me <b>via e-mail</b>, and I'll come back to you as fast as
+                    possible!</span>
+                <span lang="de">Sie können mich <b>per E-Mail</b> kontaktieren, und ich werde so schnell wie möglich auf
+                    Sie zurück kommen!</span>
             </p>
-            
+
             <div class="mail-container">
-                
+
                 <input class="checkbox" type="checkbox" />
-                
+
                 <div class="mail-btn responsive">
                     <span lang="en">Show e-mail adress &rarr;</span>
                     <span lang="de">Zeige E-Mail Adresse &rarr;</span>
                 </div>
-            
-                <a class="mail responsive" href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&colon;&#x63;&#x68;&#x72;&#x69;&#x73;&#x74;&#x69;&#x61;&#x6e;&#x64;&#x75;&#x6e;&#x6b;&#x65;&#x6c;&commat;&#x70;&#x72;&#x6f;&#x74;&#x6f;&#x6e;&#x6d;&#x61;&#x69;&#x6c;&period;&#x63;&#x6f;&#x6d;">&#x63;&#x68;&#x72;&#x69;&#x73;&#x74;&#x69;&#x61;&#x6e;&#x64;&#x75;&#x6e;&#x6b;&#x65;&#x6c;&commat;&#x70;&#x72;&#x6f;&#x74;&#x6f;&#x6e;&#x6d;&#x61;&#x69;&#x6c;&period;&#x63;&#x6f;&#x6d;</a>
-                
+
+                <a class="mail responsive"
+                    href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&colon;&#x63;&#x68;&#x72;&#x69;&#x73;&#x74;&#x69;&#x61;&#x6e;&#x64;&#x75;&#x6e;&#x6b;&#x65;&#x6c;&commat;&#x70;&#x72;&#x6f;&#x74;&#x6f;&#x6e;&#x6d;&#x61;&#x69;&#x6c;&period;&#x63;&#x6f;&#x6d;">&#x63;&#x68;&#x72;&#x69;&#x73;&#x74;&#x69;&#x61;&#x6e;&#x64;&#x75;&#x6e;&#x6b;&#x65;&#x6c;&commat;&#x70;&#x72;&#x6f;&#x74;&#x6f;&#x6e;&#x6d;&#x61;&#x69;&#x6c;&period;&#x63;&#x6f;&#x6d;</a>
+
             </div>
-            
+
             <hr />
-            
+
             <p class="responsive">
                 <span lang="en">You can also find me here:</span>
                 <span lang="de">Sie können mich auch hier finden:</span>
             </p>
-            
-            <a class="responsive socialmedia github" href="https://github.com/mahauf" target="_blank" rel="noopener noreferrer">GitHub</a>
-            
+
+            <a class="responsive socialmedia github" href="https://github.com/mahauf" target="_blank"
+                rel="noopener noreferrer">GitHub</a>
+
         </section>
-        
+
     </main>
-        
-        
-        
+
+
+
     <div id="footer-graphic">
         <div class="layer1">
             <div class="rect"></div>
@@ -482,26 +597,30 @@
         </button>
 
         <p class="responsive small">
-            <span lang="en">The source code is hosted <a href="https://github.com/christiandunkel/christiandunkel.github.io" target="_blank" rel="noopener noreferrer">here</a> on GitHub.</span>
-            <span lang="de">Der Quellcode wird auf <a href="https://github.com/christiandunkel/christiandunkel.github.io" target="_blank" rel="noopener noreferrer">GitHub</a> gehostet.</span>
+            <span lang="en">The source code is hosted <a
+                    href="https://github.com/christiandunkel/christiandunkel.github.io" target="_blank"
+                    rel="noopener noreferrer">here</a> on GitHub.</span>
+            <span lang="de">Der Quellcode wird auf <a
+                    href="https://github.com/christiandunkel/christiandunkel.github.io" target="_blank"
+                    rel="noopener noreferrer">GitHub</a> gehostet.</span>
         </p>
 
-        <p class="responsive small"> 
+        <p class="responsive small">
             <span lang="en">&copy; Copyright <span class="current-year"></span>, Mahalakshmi</span>
             <span lang="de">&copy; Urheberrecht <span class="current-year"></span>, Mahalakshmi</span>
         </p>
 
     </footer>
-    
-    
-    
-    
+
+
+
+
     <div id="reduced-motion-preference" class="hidden-message"></div>
-    
+
     <!-- scripts -->
-    
+
     <script defer src="js/app.min.js"></script>
-    
+
 </body>
 
 </html>

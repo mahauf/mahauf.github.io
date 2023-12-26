@@ -7,10 +7,10 @@
         }
     },
     {
-        "id" : "app",
+        "id" : "angular",
         "lang" : {
             "de" : "Anwendung",
-            "en" : "Application"
+            "en" : "Angular"
         }
     },
     {
@@ -42,17 +42,17 @@
         }
     },
     {
-        "id" : "cpp",
+        "id" : "figma",
         "lang" : {
             "de" : "C++",
-            "en" : "C++"
+            "en" : "Figma"
         }
     },
     {
-        "id" : "csharp",
+        "id" : "bootstrap",
         "lang" : {
             "de" : "C#",
-            "en" : "C#"
+            "en" : "Bootstrap"
         }
     }
 ];
