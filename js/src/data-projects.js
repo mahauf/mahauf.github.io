@@ -14,10 +14,10 @@
         }
     },
     {
-        "id" : "lib",
+        "id" : "express",
         "lang" : {
             "de" : "Bibliothek",
-            "en" : "Library"
+            "en" : "Express"
         }
     },
     {
