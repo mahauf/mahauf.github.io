@@ -66,8 +66,8 @@ var PROJECTS = [
                 "description" : "Diese Demo wurde als mögliches Webseitendesign für den Studierenden Konvent M18 in Weimar erstellt."
             },
             "en" : {
-                "title" : "M18 Demo Website",
-                "description" : "This demo was created as a possible website design for the student convention M18 in Weimar."
+                "title" : "Dakshin Sahodaya School Site",
+                "description" : "A common platform for all CBSE affiliated schools which carries out array of activities."
             }
         },
         "links" : [
@@ -76,14 +76,14 @@ var PROJECTS = [
                     "de" : "Webseite",
                     "en" : "Website"
                 },
-                "link" : "https://christiandunkel.github.io/m18-website/"
+                "link" : "https://github.com/mahauf/Dakshin-Sahodaya-School-site"
             },
             {
                 "lang" : {
                     "de" : "GitHub",
                     "en" : "GitHub"
                 },
-                "link" : "https://github.com/christiandunkel/m18-website"
+                "link" : "https://github.com/mahauf/Dakshin-Sahodaya-School-site"
             }
         ],
         "categories" : ["website", "js"],
@@ -98,8 +98,8 @@ var PROJECTS = [
                 "description" : "Lecture.js ist eine Software zur Umwandlung eines Skripts und Folien zu einer gesprochenen Videopräsentation mittels fortgeschrittener Text-zu-Sprache-Dienste."
             },
             "en" : {
-                "title" : "Lecture.js",
-                "description" : "Lecture.js is a software that converts a script and slides to a spoken video presentation using advanced text-to-speech services."
+                "title" : "Boutique",
+                "description" : "E-commerce boutique store with a great collection of designer attire especially for Women showcases the ability to use recent technologies."
             }
         },
         "links" : [
@@ -108,7 +108,7 @@ var PROJECTS = [
                     "de" : "GitHub",
                     "en" : "GitHub"
                 },
-                "link" : "https://github.com/webis-de/lecture.js"
+                "link" : "https://github.com/mahauf/Women-s_Clothing.Site"
             }
         ],
         "categories" : ["app", "node", "js"],
@@ -123,8 +123,8 @@ var PROJECTS = [
                 "description" : "Der Zeitvisualisierer ist eine Webanwendung zur Visualisierung von Datensätzen, die sich in einem bestimmten Zeitrahmen ändern."
             },
             "en" : {
-                "title" : "Time Visualizer",
-                "description" : "The time visualizer is a web app for visualizing data sets that change over a given time frame."
+                "title" : "EREC Construction Site",
+                "description" : "Construction management site to help run project processes smoothly, and with improved effectiveness and profitability."
             }
         },
         "links" : [
@@ -133,14 +133,14 @@ var PROJECTS = [
                     "de" : "Webseite",
                     "en" : "Website"
                 },
-                "link" : "https://christiandunkel.github.io/time-visualizer"
+                "link" : "https://github.com/mahauf/erec-construction-Site"
             },
             {
                 "lang" : {
                     "de" : "GitHub",
                     "en" : "GitHub"
                 },
-                "link" : "https://github.com/christiandunkel/time-visualizer"
+                "link" : "https://github.com/mahauf/erec-construction-Site"
             }
         ],
         "categories" : ["website", "css", "js"],
@@ -155,8 +155,8 @@ var PROJECTS = [
                 "description" : "Tensquared ist ein 2D-Puzzle-Plattformer gemacht in Unity. Der Spieler erkundet die Welt als ein Kreis, aber kann sich auch in verschiedene geometrische Formen verwandeln und neue Fähigkeiten freischalten!"
             },
             "en" : {
-                "title" : "tensquared",
-                "description" : "Tensquared is a 2D puzzle platformer made in Unity. The player explores the world as a circle, but can also morph into different geometric shapes forms and gain new abilities!"
+                "title" : "MW Resort Site",
+                "description" : "A hotel with its own platform to make a reservation or book one of your services in this digital age"
             }
         },
         "links" : [
@@ -165,7 +165,7 @@ var PROJECTS = [
                     "de" : "GitHub",
                     "en" : "GitHub"
                 },
-                "link" : "https://github.com/christiandunkel/tensquared"
+                "link" : "https://github.com/mahauf/Resort-website"
             }
         ],
         "categories" : ["app", "csharp"],
@@ -180,8 +180,8 @@ var PROJECTS = [
                 "description" : "Dieser Raytracer wurde in C++ geschrieben, um einfache Objekte mit Schattierung, Reflexion, Transparenz und mehr zu rendern."
             },
             "en" : {
-                "title" : "Raytracer",
-                "description" : "This raytracer was written in C++ to render simple objects with shading, reflection, transparency and more."
+                "title" : "Leona Handbag UI design",
+                "description" : "wireframe, mockups and prototype of Leona Handbag e-Commerce UI design in figma"
             }
         },
         "links" : [
@@ -190,7 +190,7 @@ var PROJECTS = [
                     "de" : "GitHub",
                     "en" : "GitHub"
                 },
-                "link" : "https://github.com/christiandunkel/raytracer"
+                "link" : "https://github.com/mahauf/Handbag-eCommerce"
             }
         ],
         "categories" : ["app", "cpp"],

@@ -3016,7 +3016,8 @@ html.js-off #projects #project-settings-btn {
 	margin-top: 6px;
 	font-size: 20px;
 	line-height: 1em;
-	color: #a6a9b7
+	color: #a6a9b7;
+	display: none;
 }
 
 #projects #projects-container .project .project-info .links {
