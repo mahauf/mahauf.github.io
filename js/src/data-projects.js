@@ -196,6 +196,30 @@ var PROJECTS = [
         "categories" : ["app", "cpp"],
         "image" : "img/project-raytracer.png",
         "year" : 2019
+    },
+
+    { 
+            "lang" : { 
+            "de": { 
+                "title": "Raytracer", 
+                "description": "Dieser Raytracer wurde in C++ geschrieben, um einfache Objekte mit Schattierung, Reflexion, Transparenz und mehr zu rendern." 
+            }, 
+            "en": { 
+                "title": "Snake Game", 
+                "description": "A Simple online Snake game using Javascript" 
+            } 
+        }, 
+        "links": [
+            { 
+            "lang": { 
+                "de": "GitHub", 
+                "en": "GitHub" 
+            }, 
+            "link": "https://github.com/mahauf/SnakeGame-js" 
+            }
+        ], 
+        "categories": ["js"], 
+        "image": "img/sanke.jpg"
     }
-    
-];
+        
+    ];
